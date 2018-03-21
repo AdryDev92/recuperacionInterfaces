@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="validation.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h1>Formulario Bootsrap</h1>
+    <small class="text-muted">Formulario generado con Bootsrtrap 4.0.0</small>
+</div>
+<form action="" class="formulario" novalidate>
+    <span class="col-md-12"></span>
+
+    <div class="container">
+        <div class="form-group">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" class="form-control col-6" placeholder="Nombre" required>
+            <div class="invalid-feedback">
+                Comprueba el nombre!
+            </div>
+            <div class="valid-feedback">Todo correcto!</div>
+        </div>
+        <label for="email">Email</label>
+        <div class="input-group">
+            <input type="text" id="email" class="form-control col-6" placeholder="Email">
+            <div class="input-group-append">
+                <span class="input-group-text" id="basic-addon2">@adaits.com</span>
+            </div>
+
+        </div>
+        <div class="form-group pt-3">
+            <label for="date" class="col-form-label">Fecha de nacimiento</label>
+            <input type="date" id="date">
+        </div>
+
+        <label for="profesiones">Profesión</label>
+        <div class="form-group">
+            <select name="profesiones" class="custom-select" id="profesiones">
+                <option value="informatico" selected>Informático</option>
+                <option value="profesor">Profesor</option>
+                <option value="paro">En paro</option>
+            </select>
+        </div>
+
+        <label>Sexo</label>
+        <div class="form-check">
+
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="sex" id="hombre">
+                <label for="hombre">Hombre</label>
+            </div>
+
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="sex" id="mujer">
+                <label for="mujer">Mujer</label>
+            </div>
+        </div>
+        <div class="form-check pt-3">
+            <input type="checkbox" class="form-check-input" id="politicas">
+            <label for="politicas" class="form-check-label">Acepto
+                política de privacidad</label>
+        </div>
+
+        <span class="col-md-12"></span>
+        <div class="custom-file pb-5">
+            <label for="file" class="custom-file-label">Subir una imagen</label>
+            <input type="file" class="custom-file-input" id="file">
+        </div>
+            <input type="submit" class="btn btn-primary">
+    </div>
+</form>
+
+</body>
+</html>
